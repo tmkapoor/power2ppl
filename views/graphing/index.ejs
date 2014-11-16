@@ -574,7 +574,7 @@ function InitChart() {
 
     //setter - domain/range
     yRange = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain([d3.min(lineData, function (d) {
-        return (d.y * 1);
+        return (d.y * 0.9);
       }),
       d3.max(lineData, function (d) {
         return d.y;

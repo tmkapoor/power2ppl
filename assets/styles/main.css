@@ -10,8 +10,69 @@ input[type="submit"]{
 legend{
 	margin-top: 1em;
 }
+.card-container{
+
+}
+
+.card{
+	border: 0.25em solid white;
+}
+
+.active-card{
+    border: 0.25em solid #295da6;
+}
+
+.card-container *{
+	height: auto;
+	margin: auto auto 1em auto;
+}
+
+.details{
+	padding: 1em;
+	font-size: 1.2em;
+}
+
+.details *{
+	height: auto;
+}
+
+.sc-background{
+	background: #295da6;
+	color: white;
+}
+
 .centered{
 	text-align: center;
+}
+
+.map{
+	cursor: pointer;
+}
+
+.floater{
+	overflow: hidden;
+	position: absolute;
+	bottom: 100px;
+	left: 24px;
+	z-index: 9000;
+	border: 0.25em solid #232323;
+	display: none;
+	cursor: pointer;
+}
+
+.recalc-modal{
+	background: rgba(0, 0, 0, 0.25);
+	display: none;
+	position: absolute;
+	z-index: 9000;
+	color: white;
+	font-size: 5em;
+	text-align: center;
+}
+
+.recalc-modal p {
+	margin-top: 3em;
+	background: rgba(0, 0, 0, 0.25);
 }
 
 .right-aligned{
@@ -21,6 +82,28 @@ legend{
 .top-bottom-margin{
 	margin-top: 0.75em;
 	margin-bottom: 0.75em;
+}
+
+.deets{
+	background: #2e67b1;
+	padding: 1em;
+	color: white;
+}
+
+.deet-reading *{
+	margin: 0.5em;
+}
+
+.deet-reading .min{
+	font-size: 0.8em;
+}
+
+.deet-reading .now{
+	font-size: 1.2em;
+}
+
+.deet-reading .max{
+	font-size: 0.8em;
 }
 
 .alert li{
@@ -55,8 +138,7 @@ legend{
 }
 
 .clickable:hover{
-	background: #f0f0f0;
-	border-radius: 2em;
+	border: 0.25em solid #295da6;
 }
 
 .btn{
