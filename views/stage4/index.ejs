@@ -1,0 +1,77 @@
+<div class="floater">
+	<img src="images/big-map.png" />
+</div>
+
+<div class="recalc-modal">
+	<p>Recalculating...</p>
+</div>
+
+<div class="holder row">
+	<!-- Deets + map -->
+	<div id="detailsContainer" class="col-md-3 card-container sc-background" style="height: 100%;">
+		<div class="details">
+			<p class="name">John Doe</p>
+			<p>Home device</p>
+			<p>Islington, London</p>
+			<p>UK</p>
+
+		</div>
+		<div>
+			<img class="map" style="width: 100%; height: auto;" src="images/mini-map.png" />
+		</div>
+	</div>
+
+	<div id="dataContainer" class="col-md-9">
+		<div class="row">
+			<div class="col-md-12" style="text-align: center;">
+				<img style="width: 100%; height: auto;" id="date-picker" src="images/slider-week.png" />
+			</div>
+		</div>
+		<div class="row">
+			<!-- temp + CO -->
+			<div class="col-md-4 card-container">
+				<img class="clickable card" style="width: 100%; height: auto;" src="images/temp_card.png" />
+			</div>
+
+			<!-- Humidity + NO2 -->
+			<div class="col-md-4 card-container">
+				<img class="clickable card" style="width: 100%; height: auto;" src="images/humid_card.png" />
+			</div>
+
+			<!-- Light + Noise (optional) -->
+			<div class="col-md-4 card-container">
+				<img class="clickable card" style="width: 100%; height: auto;" src="images/light_card.png" />
+			</div>
+		</div>
+
+		<div class="row" style="margin-bottom: 1em;">
+			<div id="graph" class="col-md-12">
+				<center>
+					<!-- Graph instructions -->
+					<div class="graph-instruction">
+						<p>Select a reading to see details</p>
+					</div>
+					<img id="graph-reading" style="width: 100%; height: auto;" src="images/graph-reading-3.png" />
+					<img id="graph-bg" style="width: 100%; height: auto;" src="images/graph_bg.png" />
+				</center>
+			</div>
+		</div>
+
+		<div class="row">
+			<!-- temp + CO -->
+			<div class="col-md-4 card-container">
+				<img class="clickable card" style="width: 100%; height: auto;" src="images/CO_card_rect.png" />
+			</div>
+
+			<!-- Humidity + NO2 -->
+			<div class="col-md-4 card-container">
+				<img class="clickable card" style="width: 100%; height: auto;" src="images/CO_card_rect.png" />
+			</div>
+
+			<!-- Light + Noise (optional) -->
+			<div class="col-md-4 card-container">
+				<img class="clickable card" style="width: 100%; height: auto;" src="images/CO_card_rect.png" />
+			</div>
+		</div>
+	</div>
+</div>
