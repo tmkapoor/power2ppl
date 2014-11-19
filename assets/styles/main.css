@@ -144,6 +144,57 @@ legend{
 	top: 0px;
 }
 
+.signstuff{
+	background: url(../images/sign-right.png);
+}
+
+li.li-header{
+	color: #232323;
+	font-size: 1.5em;
+	background: white;
+	cursor: default;
+}
+
+li.li-header a{
+	color: #232323;
+}
+
+li.li-header a:hover{
+	color: #232323;
+	background: white;
+	color: #232323;
+	
+}
+
+li.li-header:hover{
+	background: white;
+	color: #232323;
+}
+
+.signstuff p{
+	color: #ffba34;
+}
+.signstuff .destination{
+	font-size: 2.25em;
+}
+
+.signstuff .information{
+	font-size: 2em;
+}
+
+.signstuff.left{
+	text-align: right;
+}
+
+.signstuff.right{
+	text-align: left;
+}
+
+hr.underline{
+	margin-top: 0em;
+}
+
+
 .validation-error{
 	-moz-box-shadow: 0 0 5px red;
 	-webkit-box-shadow: 0 0 5px red;

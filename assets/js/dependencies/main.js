@@ -18,6 +18,21 @@ function recalc(){
 
  	var dataSelected = 0;
 
+ 	$(".what-selector li").click(function(event) {
+ 		$(".what-selector li").removeClass('active');
+ 		$(this).addClass('active');
+ 	});
+
+ 	$(".as-selector li").click(function(event) {
+ 		$(".as-selector li").removeClass('active');
+ 		$(this).addClass('active');
+ 	});
+
+ 	$(".time-selector li").click(function(event) {
+ 		$(".time-selector li").removeClass('active');
+ 		$(this).addClass('active');
+ 	});
+
  	$("#graph-bg").load(function(e){
  		//$(".graph-instruction").load(function(e){
  			var instr = $(".graph-instruction");
