@@ -28,6 +28,7 @@
       <a class="navbar-brand" href="#">Smart Citizen</a>
     </div>
 
+    <% if( req.session.showNav && req.session.showNav == true){ %>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
@@ -39,6 +40,7 @@
         <li role="presentation" tabindex="-1" ><a class="timeframe year" href="#">Last year</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
+    <% } %>
   </div><!-- /.container-fluid -->
 </nav>
     <div class="container">

@@ -9,8 +9,8 @@
 <div class="holder row">
 	<!-- Deets + map -->
 	<div id="detailsContainer" class="col-md-3 card-container sc-background" style="height: 100%;">
-		<div class="details">
-			<p class="name">John Doe</p>
+		<div class="details" style="height: 365px;" >
+			<p class="name">Joe Everyman</p>
 			<p>Home device</p>
 			<p>Islington, London</p>
 			<p>UK</p>
@@ -24,23 +24,23 @@
 	<div id="dataContainer" class="col-md-9">
 		<div class="row">
 			<div class="col-md-12" style="text-align: center;">
-				<img style="width: 100%; height: auto;" id="date-picker" src="images/slider-week.png" />
+				<img id="slider" style="width: 100%; height: auto;" id="date-picker" src="images/slider-week.png" />
 			</div>
 		</div>
 		<div class="row">
 			<!-- temp + CO -->
 			<div class="col-md-4 card-container">
-				<img class="clickable card" style="width: 100%; height: auto;" src="images/temp_card.png" />
+				<img class="clickable card trigger-top" style="width: 100%; height: auto;" src="images/temp_card.png" />
 			</div>
 
 			<!-- Humidity + NO2 -->
 			<div class="col-md-4 card-container">
-				<img class="clickable card" style="width: 100%; height: auto;" src="images/humid_card.png" />
+				<img class="clickable card trigger-top" style="width: 100%; height: auto;" src="images/humid_card.png" />
 			</div>
 
 			<!-- Light + Noise (optional) -->
 			<div class="col-md-4 card-container">
-				<img class="clickable card" style="width: 100%; height: auto;" src="images/light_card.png" />
+				<img class="clickable card trigger-top" style="width: 100%; height: auto;" src="images/light_card_AN.png" />
 			</div>
 		</div>
 
@@ -51,7 +51,8 @@
 					<div class="graph-instruction">
 						<p>Select a reading to see details</p>
 					</div>
-					<img id="graph-reading" style="width: 100%; height: auto;" src="images/graph-reading-3.png" />
+					<img id="graph-reading-top" style="width: 100%; height: auto;" src="images/graph-gc-temp-weekly.png" />
+					<img id="graph-reading-bottom" style="width: 100%; height: auto;" src="images/graph-gc-co-weekly.png" />
 					<img id="graph-bg" style="width: 100%; height: auto;" src="images/graph_bg.png" />
 				</center>
 			</div>
@@ -60,17 +61,17 @@
 		<div class="row">
 			<!-- temp + CO -->
 			<div class="col-md-4 card-container">
-				<img class="clickable card" style="width: 100%; height: auto;" src="images/CO_card_rect.png" />
+				<img class="clickable card trigger-bottom" style="width: 100%; height: auto;" src="images/CO_card_rect.png" />
 			</div>
 
 			<!-- Humidity + NO2 -->
 			<div class="col-md-4 card-container">
-				<img class="clickable card" style="width: 100%; height: auto;" src="images/CO_card_rect.png" />
+				<img class="clickable card trigger-bottom" style="width: 100%; height: auto;" src="images/NO2_card_rect.png" />
 			</div>
 
 			<!-- Light + Noise (optional) -->
 			<div class="col-md-4 card-container">
-				<img class="clickable card" style="width: 100%; height: auto;" src="images/CO_card_rect.png" />
+				<img class="clickable card trigger-bottom" style="width: 100%; height: auto;" src="images/Noise_card_rect.png" />
 			</div>
 		</div>
 	</div>
